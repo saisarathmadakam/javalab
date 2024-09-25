@@ -1,0 +1,138 @@
+import java.util.*;
+ interface laptop
+{
+  public void copy();
+  
+  public void paste();
+  
+  public void cut(); 
+  
+  public void keyboard();
+  
+  default void security()
+  {
+    System.out.println("please implement");
+  }
+  
+  static void audio()
+  {  
+  
+    similar();
+    System.out.println("laptop audio");
+  }
+  
+  
+  private static void similar()
+  {
+    System.out.println("common code");
+  }
+  
+  }
+
+
+  class lenovo implements laptop
+ {
+  
+   public void copy()
+   {
+     System.out.println("lenovo copy");
+   }
+   
+   public void paste()
+   {
+     System.out.println("lenovo paste");
+   }
+   
+   public void cut()
+   {
+     System.out.println("lenovo cut");
+   }
+   
+   public void keyboard()
+   {
+     System.out.println("lenovo keybord");
+   }
+
+   public void security()
+   {
+    System.out.println("lenovo security");
+   }
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class apple implements laptop
+ {
+  
+   public void copy()
+   {
+     System.out.println("apple copy");
+   }
+   
+   public void paste()
+   {
+     System.out.println("apple paste");
+   }
+   
+   public void cut()
+   {
+     System.out.println("apple cut");
+   }
+   
+   public void keyboard()
+   {
+     System.out.println("apple keybord");
+   }
+ }
+ 
+ 
+ 
+ 
+ 
+ class hp implements laptop
+ {
+  
+   public void copy()
+   {
+     System.out.println("hp copy");
+   }
+   
+   public void paste()
+   {
+     System.out.println("hp paste");
+   }
+   
+   public void cut()
+   {
+     System.out.println("hp cut");
+   }
+   
+   public void keyboard()
+   {
+     System.out.println("hp keybord");
+   }
+ }
+ 
+ 
+ 
+ 
+public class sarath
+{
+ 	public static void main(String[]args)
+	{
+ 		lenovo le = new lenovo();
+ 		le.copy();
+ 		le.paste();
+ 		le.cut();
+	 	le.keyboard();
+	 	le.security();
+	 	laptop.audio();
+	 }
+}
+  
+   
+   
